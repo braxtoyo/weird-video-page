@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Videos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .video-wrapper {
+            margin: 20px;
+            padding: 20px;
+            border: 2px dashed #ff00ff;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Other Videos</h1>
+        <a href="index.html">Go Back Home</a>
+    </header>
+
+    <main>
+        <!-- Method 1: Embedding a local video file (like .mp4 or .mov) -->
+        <div class="video-wrapper">
+            <h2>1. Local Video File (.mp4, .webm, or .mov)</h2>
+            <p>Use the <code>&lt;video&gt;</code> tag for files saved in your folder.</p>
+            <video width="640" height="360" controls>
+                <!-- Replace 'your-video.mp4' with the actual file name -->
+                <source src="patty.MOV" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Method 2: Embedding a YouTube Video -->
+        <div class="video-wrapper">
+            <h2>2. YouTube Video iframe</h2>
+            <p>Go to YouTube -> Share -> Embed, and paste the iframe code here.</p>
+            <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        
+    </main>
+</body>
+</html>
