@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Totally Normal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="dad-joke-1" class="dad-joke floating">"I would tell you a joke about construction, but I’m still working on it."</div>
+    <div id="dad-joke-2" class="dad-joke blinking" title="Why don’t skeletons fight each other? They don’t have the guts.">Hover me!</div>
+    
+    <header>
+        <marquee behavior="alternate" direction="right" scrollamount="12"><h1>WARNING: IMPORTANT CONTENT BELOW ⚠️</h1></marquee>
+    </header>
+
+    <div class="ad left-ad bouncing" onclick="alert('Virus downloaded successfully. (Just kidding!)');">
+        <h3>ADVERTISEMENT</h3>
+        <p>Buy invisible ink pens – now you see it, now you don’t</p>
+        <button>CLICK HERE</button>
+    </div>
+
+    <div class="ad right-ad shaking" onclick="alert('You are now a certified master button clicker.');">
+        <h3>HOT DEAL</h3>
+        <p>Certified Professional Button Clicker Course</p>
+        <button style="font-size: 20px; color: red;">DOWNLOAD MORE RAM INSTANTLY</button>
+    </div>
+
+    <div class="layout-wrapper">
+        <aside class="sidebar">
+            <h3 style="transform: rotate(3deg); background: #fff; color: #000; padding: 5px;">Other "Videos"</h3>
+            <p style="font-size: 0.8em; line-height: 1.1; margin-bottom: 20px;">Definitely nothing sketchy here.</p>
+            
+            <div class="sidebar-slot" id="slot-1">
+                <div class="slot-placeholder">Empty Void</div>
+                <video class="slot-video hidden" controls></video>
+                <input type="file" class="slot-upload hidden" accept="video/*">
+            </div>
+            
+            <div class="sidebar-slot" id="slot-2">
+                <div class="slot-placeholder">Nothingness</div>
+                <video class="slot-video hidden" controls></video>
+                <input type="file" class="slot-upload hidden" accept="video/*">
+            </div>
+            
+            <div class="sidebar-slot" id="slot-3">
+                <div class="slot-placeholder">Abyss</div>
+                <video class="slot-video hidden" controls></video>
+                <input type="file" class="slot-upload hidden" accept="video/*">
+            </div>
+        </aside>
+
+        <main class="container">
+            <h2>DO NOT CLICK THE VIDEO!</h2>
+            
+            <div id="video-container">
+                <div id="loading-overlay" class="hidden">
+                    <p>Analyzing...</p>
+                    <div class="loading-bar">
+                        <div class="loading-progress"></div>
+                    </div>
+                </div>
+                <div id="funny-message" class="hidden">You fell for it! Nice choice.</div>
+                <video id="main-video" controls>
+                    <source src="patty.MOV" type="video/mp4">
+                    <source src="patty.MOV" type="video/quicktime">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="controls" id="admin-controls" style="display:none;">
+                <label for="video-upload" class="quirky-button" style="display:inline-block;">Upload Your Own Video (If you dare)</label>
+                <input type="file" id="video-upload" accept="video/*" class="hidden">
+                <br>
+                <input type="text" id="video-url" placeholder="Or paste a sketchy video URL here...">
+                <button id="load-url-btn" class="quirky-button">Load URL</button>
+            </div>
+
+            <section class="related-videos">
+                <h3>Also Recommended (Maybe)</h3>
+                <div class="related-grid">
+                    <a href="https://www.wikihow.com/Blink" target="_blank" style="text-decoration: none; color: inherit;">
+                        <div class="related-video">
+                            <div class="thumbnail" style="background-color: magenta;"></div>
+                            <p>Top 10 ways to blink</p>
+                        </div>
+                    </a>
+                    <a href="https://www.livescience.com/32496-why-is-grass-green.html" target="_blank" style="text-decoration: none; color: inherit;">
+                        <div class="related-video" style="transform: rotate(-3deg);">
+                            <div class="thumbnail" style="background-color: cyan;"></div>
+                            <p>Why grass is green (Shocking)</p>
+                        </div>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/Extraterrestrial_life" target="_blank" style="text-decoration: none; color: inherit;">
+                        <div class="related-video" style="transform: rotate(5deg);">
+                            <div class="thumbnail" style="background-color: lime;"></div>
+                            <p>Aliens among us??</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="dad-joke-3" class="dad-joke crawling">"What do you call a fake noodle? An impasta."</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
